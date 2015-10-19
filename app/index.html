@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=800, height=600, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+<title>Auchan Flappy</title>
+<!--[if IE 8]><script src="/compatibility/ie8.js"></script><![endif]-->
+<!--[if lte IE 8]><script type="text/javascript" src="/compatibility/excanvas.js"></script><![endif]-->
+  <!--[if lte IE 8]>
+<script src='/compatibility/es5-shim.min.js'></script>
+<script src='/compatibility/es5-sham.min.js'></script>
+<![endif]-->
+
+<script src='../compatibility/ajax.min.js'></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<!-- Quintus HTML5 Game Engine -->
+<script src='/lib/quintus.js'></script>
+<script src='/lib/quintus_sprites.js'></script>
+<script src='/lib/quintus_scenes.js'></script>
+<script src='/lib/quintus_input.js'></script>
+<script src='/lib/quintus_anim.js'></script>
+<script src='/lib/quintus_2d.js'></script>
+<script src='/lib/quintus_touch.js'></script>
+<script src='/lib/quintus_ui.js'></script>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '418402335027455',
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script src='flappy.js'></script>
+<style> 
+  body { padding:0px; margin:0px; top: 100px; font-family: 'Times New Roman',"Helvetica"; }
+</style>
+</head>
+<body>
+  <canvas id="game" width="800" height="600"></canvas>
+</body>
+</html>
